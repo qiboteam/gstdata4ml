@@ -47,7 +47,6 @@ training_labels_2Q = np.load('training_labels_NN_2Q_100x53sets.npy')
 
 ```
 
-
 ## Create the NN-1Q model
 ```python
 import tensorflow as tf
@@ -104,7 +103,7 @@ scaler_2Q = load(open('StandardScaler_NN_2Q.pkl', 'rb'))
 ```
 
 Ensure that input data is properly scaled using the corresponding StandardScaler before making predictions. 
-For example,
+For example, if `input_data_1` and `input_data_2` have the correct input shapes for `NN_1Q` and `NN_2Q`, respectively, the StandardScalers can be used as follows:
 ```python
 input_data_1Q = scaler_1Q.transform(input_data_1)
 input_data_2Q = scaler_2Q.transform(input_data_2)
