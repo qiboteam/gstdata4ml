@@ -64,7 +64,7 @@ num_layers = 2
 NN_1Q = models.Sequential()
 model.add(layers.Input(shape=(np.shape(training_data_1Q)[1],)))
 for _ in range(num_layers):
-    NN_1Q.add(layers.Dense(128, activation='relu' kernel_regularizer=tf.keras.regularizers.l2(5e-5)))
+    NN_1Q.add(layers.Dense(128, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(5e-5)))
     NN_1Q.add(layers.Dropout(5e-5))
 NN_1Q.add(layers.Dense(4, activation=custom_sigmoid(alpha=8)))
 
