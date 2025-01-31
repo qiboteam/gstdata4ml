@@ -18,11 +18,11 @@ pip install scikit-learn
 
 ## Files
 
-- ``: Pre-trained weights for the single-qubit neural network.
-- ``: Pre-trained weights for the two-qubit neural network.
-- ``: StandardScaler object used to scale input data for the single-qubit neural network.
-- ``: StandardScaler object used to scale input data for the two-qubit neural network.
-- ``: Compressed file containing training data and labels.
+- `NN_1Q_weights.keras`: Pre-trained weights for the single-qubit neural network.
+- `NN_2Q_weights.keras`: Pre-trained weights for the two-qubit neural network.
+- `StandardScaler_NN_1Q.pkl`: StandardScaler object used to scale input data for the single-qubit neural network.
+- `StandardScaler_NN_2Q.pkl`: StandardScaler object used to scale input data for the two-qubit neural network.
+- `training_data_and_labels.zip`: Compressed file containing training data and labels.
 
 ## Using the Training Data
 
