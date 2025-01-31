@@ -48,7 +48,7 @@ training_labels_2Q = np.load('training_labels_NN_2Q_100x53sets.npy')
 ```
 
 
-## Create the models
+## Create the NN-1Q model
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers, models
@@ -71,7 +71,10 @@ NN_1Q.add(layers.Dense(4, activation=custom_sigmoid(alpha=8)))
 
 # Compile
 NN_1Q.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4), loss='mean_squared_error', metrics=['mae'])
+```
 
+## Create the NN-2Q model
+```python
 # Recreate the model architecture for NN_2Q
 num_layers = 2
 NN_2Q = models.Sequential()
@@ -86,7 +89,7 @@ NN_2Q.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4), loss='mean
 
 ```
 
-## Loading the weights of the Models
+## Loading the weights of the models
 ```python
 NN_1Q.load_weights('NN_1Q_weights.keras')
 NN_2Q.load_weights('NN_2Q_weights.keras')
