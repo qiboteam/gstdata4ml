@@ -42,8 +42,10 @@ pip install scikit-learn
 training_data_1Q = np.load('training_data_NN_1Q_10000x10sets.npy')
 training_labels_1Q = np.load('training_labels_NN_1Q_10000x10sets.npy')
 
-training_data_2Q = np.load('training_data_NN_2Q_100x53sets.npy')
-training_labels_2Q = np.load('training_labels_NN_2Q_100x53sets.npy')
+training_data_2Q = np.load('training_data_NN_2Q_100x53_20250901.npy')
+training_labels_2Q = np.load('training_labels_NN_2Q_100x53_20250901.npy')
+test_data_2Q = np.load('test_data_NN_2Q_100x3_20250901.npy')
+test_labels_2Q = np.load('test_labels_NN_2Q_100x3_20250901.npy')
 
 ```
 
@@ -98,7 +100,7 @@ NN_2Q.load_weights('NN_2Q_weights.keras')
 ```python
 from pickle import dump, load
 scaler_1Q = load(open('StandardScaler_NN_1Q.pkl', 'rb'))
-scaler_2Q = load(open('StandardScaler_NN_2Q.pkl', 'rb'))
+scaler_2Q = load(open('StandardScaler_NN_2Q_20250901.pkl', 'rb'))
 
 ```
 
