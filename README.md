@@ -24,6 +24,7 @@ pip install scikit-learn
 - `StandardScaler_NN_2Q.pkl`: StandardScaler object used to scale input data for the two-qubit neural network.
 - `training_data_and_labels_NN_1Q.zip`: Compressed file containing training data and labels for NN_1Q.
 - `training_data_and_labels_NN_2Q.zip`: Compressed file containing training data and labels for NN_2Q.
+- `training_data_and_labels_NN_2Q_20250901.zip`: Compressed file containing training and test data and labels for NN_2Q (with latest predictions from NN_1Q on 20250901).
 
 ## Using the Training Data
 
@@ -46,7 +47,6 @@ training_data_2Q = np.load('training_data_NN_2Q_100x53_20250901.npy')
 training_labels_2Q = np.load('training_labels_NN_2Q_100x53_20250901.npy')
 test_data_2Q = np.load('test_data_NN_2Q_100x3_20250901.npy')
 test_labels_2Q = np.load('test_labels_NN_2Q_100x3_20250901.npy')
-
 ```
 
 ## Create the NN-1Q model
