@@ -26,6 +26,7 @@ pip install scikit-learn
 - `training_data_and_labels_NN_2Q.zip`: Compressed file containing training data and labels for NN_2Q.
 - `training_data_and_labels_NN_2Q_20250901.zip`: Compressed file containing training and test data and labels for NN_2Q (with latest predictions from NN_1Q on 20250901).
 - `IQM_GST_UCC_20250901.zip`: Compressed file containing IQM GST and UCC sweep data. Experiments were done on IQM Garnet on 20250901 within 3 hours timeframe.
+- `IQM_GST_UCC_old.zip`: Compressed file containing IQM GST 1qb (20241218), GST 2qb (20241118), UCC (20250114). Experiments done on separate days.
 
 ## Using the Training Data
 
